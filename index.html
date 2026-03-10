@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LookingOutForYou - Nutrition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="logo.png" class="logo-image">
+
+            <div>
+                <h1>LookingOutForYou.com</h1>
+                <p>Making food nutritious and entertaining</p>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <a href="signup.html">
+            <button class="sign-up">sign up now!</button>
+        </a>
+    </section>
+
+    <div class="main-wrapper">
+        <main>
+            <div class="filter-bar">
+                <input type="text" placeholder="search..." class="search-input">
+                <select id="filterSelect" class="plan-dropdown">
+                    <option value="index.html">Plans</option>
+                
+                </select>
+               
+            </div>
+
+            <section class="recipe-grid">
+                <div class="recipe-card">
+            <a href="Burrito.html" style="text-decoration: none; color: inherit; display: block;">
+                    <img src="burritobreakfast.jpg" alt="Burrito">
+                    <h3>Breakfast Burrito</h3>
+                    <a href="Burrito.html"></a>
+                    <p>Tofu scramble, black beans, avocado, roasted bell pepper, spinach...</p>
+                </div>
+            </a>
+
+                <div class="recipe-card locked">
+                <div id="item-1">
+
+                    <img src="lockedimage.jpg" id="image-1" alt="Egg Muffin">
+                    
+                        <h2 id="item-1-title">Unavailable</h2> <p id="item-1-desc">Locked</p>
+                        <p>Total Coins: <span id="coin-display">0</span></p>
+                        <button class="action-btn" type="buttom" onclick="performSearch(); window.open('https://pmc.ncbi.nlm.nih.gov/articles/PMC12549772/', '_blank');">"Perform Website Search"</button>
+                        <button class="action-btn" onclick="resetCoins(event)">Reset Progress</button>
+            </a>
+                 
+                
+            </section>
+        </main>
+
+        <aside class="sidebar">
+
+            <div class="sidebar-section">
+                <h3>Read More About It <span class="coin-icon">$</span></h3>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12549772/" target="_blank" id="search-link" onclick="performance()">The Role of Nutrition in Puberty and Adolescent Development
+                </a>
+                
+            </div>
+        </aside>
+    </div>
+
+               
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2026 LookingOutForYou.com. All rights reserved.</p>
+        <nav class="footer-links">
+            <a href="about.html">Contact Us</a>
+        </nav>
+    </div>
+</footer>
+    
+    <script src="index.js"></script>
+
+</body>
+</html>
